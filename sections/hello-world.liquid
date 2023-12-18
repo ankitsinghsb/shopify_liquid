@@ -1,0 +1,27 @@
+<h1>{{ section.settings.helloWorldSectionId }}</h1>
+
+{% schema %}
+{
+  "name": "Hello world section",
+  "settings": [
+    {
+    "type": "text",
+    "id": "helloWorldSectionId",
+    "label": "Enter Text",
+    "default": "Hello Shopify World !"
+  }
+  ],
+  "presets" : [
+    {
+    "name":"Hello World Section",
+    "category":"text"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

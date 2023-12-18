@@ -1,0 +1,52 @@
+{% if section.settings.ankitSectionCheckbox %}
+  <div style="text-align: {{ section.settings.text_position }}">
+    <h1>{{ section.settings.ankitSectionId }}</h1>
+  </div>
+
+{% else %}
+  <h5>Please enable the checkbox to type</h5>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Ankit section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "ankitSectionId",
+      "label": "Enter Text",
+      "default": "I am default text bro..."
+    },
+    {
+      "type": "checkbox",
+      "id": "ankitSectionCheckbox",
+      "label": "Enable your text",
+      "default": true
+    },
+       {
+      "type": "select",
+      "id": "text_position",
+      "label": "Position your text",
+      "options": [
+        {"value": "left", "label":"Left"},
+           {"value": "center", "label":"Center"},
+        {"value": "right", "label":"Right"}
+      ],
+      "default": "left"
+
+    }
+  ],
+  "presets" : [
+    {
+      "name":"Ankit Text Section",
+      "category":"text"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,31 @@
+<div style="color:red; text-align:{{ section.settings.text_position }}">{{ section.settings.text_id }}</div>
+
+{% schema %}
+{
+  "name": "Custom Page text",
+  "settings": [
+    {
+      "type" : "text",
+      "id": "text_id",
+      "label": "eneter a text",
+      "default": "Prachi"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "position your text",
+      "options": [
+        {"value" :"left" , "label": "left"},
+        {"value" :"right" , "label": "right"}
+      ],
+      "default": "left"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
