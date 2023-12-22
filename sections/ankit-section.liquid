@@ -1,5 +1,5 @@
 {% if section.settings.ankitSectionCheckbox %}
-  <div style="text-align: {{ section.settings.text_position }}">
+  <div style="text-align: {{ section.settings.text_position }} font-size: {{ section.settings.font_size }}">
     <h1>{{ section.settings.ankitSectionId }}</h1>
   </div>
 
@@ -7,12 +7,20 @@
   <h5>Please enable the checkbox to type</h5>
 {% endif %}
 
-{{ 'range.js' | asset_url | script_tag }}
-
 {% schema %}
 {
   "name": "Ankit section",
   "settings": [
+    {
+  "type": "range",
+  "id": "font_size",
+  "min": 12,
+  "max": 24,
+  "step": 1,
+  "unit": "px",
+  "label": "Font size",
+  "default": 16
+},
     {
       "type": "text",
       "id": "ankitSectionId",
