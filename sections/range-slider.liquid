@@ -1,12 +1,16 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
+import {LegacyCard, RangeSlider} from '@shopify/polaris'; import {useState, useCallback} from 'react';
 
-{% stylesheet %}
-{% endstylesheet %}
+function RangeSliderExample() { const [rangeValue, setRangeValue] = useState(32);
 
-{% javascript %}
-{% endjavascript %}
+const handleRangeSliderChange = useCallback( (value: number) => setRangeValue(value), [], );
+
+return (
+<LegacyCard sectioned title="Background color">
+  <RangeSlider
+    label="Opacity percentage"
+    value="{rangeValue}"
+    onChange="{handleRangeSliderChange}"
+    output
+  />
+</LegacyCard>
+); }
