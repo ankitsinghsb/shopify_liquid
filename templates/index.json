@@ -170,6 +170,7 @@
     "b11607ff-227e-4be4-a1b2-468f0e9e4003": {
       "type": "ankit-section",
       "settings": {
+        "font_size": 16,
         "ankitSectionId": "default tag here",
         "ankitSectionCheckbox": true,
         "text_position": "left"
