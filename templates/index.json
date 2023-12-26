@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "हमारे नवीनतम उत्पाद ब्राउज़ करें",
             "heading_size": "h0"
           }
         },
@@ -27,6 +27,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/smiling-woman-on-snowy-afternoon_925x_3c9e6839-0961-4dd0-aabe-b25b5dd02d94.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
