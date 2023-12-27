@@ -170,10 +170,12 @@
     "b11607ff-227e-4be4-a1b2-468f0e9e4003": {
       "type": "ankit-section",
       "settings": {
-        "font_size": 16,
+        "font_size": 24,
         "ankitSectionId": "default tag here",
         "ankitSectionCheckbox": true,
-        "text_position": "left"
+        "text_position": "left",
+        "padding_top": 0,
+        "padding_left": 48
       }
     }
   },
