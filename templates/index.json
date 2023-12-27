@@ -171,7 +171,7 @@
       "type": "ankit-section",
       "settings": {
         "font_size": 24,
-        "ankitSectionId": "Default tag here",
+        "ankitSectionId": "This is text for demo",
         "ankitSectionCheckbox": true,
         "text_position": "left",
         "padding_top": 0,
