@@ -1,6 +1,6 @@
 {% if section.settings.ankitSectionCheckbox %}
   <div style="text-align: {{ section.settings.text_position }}">
-    <p style="font-size: {{ section.settings.font_size }}px">{{ section.settings.ankitSectionId }}</p>
+    <p style="font-size: {{ section.settings.font_size }}px ">{{ section.settings.ankitSectionId }}</p>
   </div>
 
 {% else %}
@@ -12,19 +12,19 @@
   "name": "Ankit section",
   "settings": [
     {
-  "type": "range",
-  "id": "font_size",
-  "min": 12,
-  "max": 24,
-  "step": 1,
-  "label": "Font size",
-  "default": 16
-},
+      "type": "range",
+      "id": "font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "label": "Font size",
+      "default": 16
+    },
     {
       "type": "text",
       "id": "ankitSectionId",
       "label": "Enter Text",
-      "default": "I am default text bro..."
+      "default": "default tag here"
     },
     {
       "type": "checkbox",
@@ -32,7 +32,7 @@
       "label": "Enable your text",
       "default": true
     },
-       {
+    {
       "type": "select",
       "id": "text_position",
       "label": "Position your text",
@@ -42,7 +42,24 @@
         {"value": "right", "label":"Right"}
       ],
       "default": "left"
-
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "label": "Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_left",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "label": "Padding Left",
+      "default": 0
     }
   ],
   "presets" : [
