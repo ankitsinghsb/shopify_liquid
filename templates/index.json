@@ -171,7 +171,7 @@
       "type": "ankit-section",
       "settings": {
         "font_size": 24,
-        "ankitSectionId": "default tag here",
+        "ankitSectionId": "Default tag here",
         "ankitSectionCheckbox": true,
         "text_position": "left",
         "padding_top": 0,
