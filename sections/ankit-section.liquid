@@ -1,6 +1,6 @@
 {% if section.settings.ankitSectionCheckbox %}
   <div style="text-align: {{ section.settings.text_position }}">
-    <p style="font-size: {{ section.settings.font_size }}px padding-left: {{ section.settings.padding_left }}px padding-top: {{ section.settings.padding_top }}px">
+    <p style="font-size: {{ section.settings.font_size }}px; padding-left: {{ section.settings.padding_left }}px; padding-top: {{ section.settings.padding_top }}px">
       {{ section.settings.ankitSectionId }}
     </p>
   </div>
@@ -44,6 +44,24 @@
         {"value": "right", "label":"Right"}
       ],
       "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "label": "Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_left",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "label": "Padding Left",
+      "default": 0
     }
   ],
   "presets" : [
