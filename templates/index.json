@@ -101,6 +101,7 @@
         "template--16421530992818__cba62312-6d35-4fab-885d-8ebc4838383e-button-1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/model-in-neutral-colors-by-window.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
