@@ -176,7 +176,7 @@
         "font_size": 24,
         "ankitSectionId": "This is text for demo",
         "ankitSectionCheckbox": true,
-        "text_position": "left",
+        "text_position": "center",
         "padding_top": 0,
         "padding_left": 50
       }
